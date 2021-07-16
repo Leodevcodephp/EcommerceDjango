@@ -1,0 +1,18 @@
+{% extends 'shopy/base.html' %}
+{% load static %}
+{% block title %} Order Complete{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-9 offset-sm-1 text-center">
+    <h3 style="margin: -43px 0 8px 0;"> Congratulation {{user.username}} orders successfully </h3>
+    <div>
+      <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://giphy.com/static/img/zoomies.gif" width="558" height="412">
+    </div>
+  </div>
+   <div class="col-sm-9 offset-sm-1 text-center">
+       <a class="btn btn-success" href="/" style="margin: 18px 0 -30px 0;">Continue ShoppingX</a>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
